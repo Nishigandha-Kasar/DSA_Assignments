@@ -1,13 +1,16 @@
-// 
-function reverseArray(arr){
-    const reverseArray=[];
-    for(let i=arr.length-1;i>=0;i--){
-        reverseArray.push(arr[i]);
-    }
-    return arr;
-}
+function revArray(array){
 
-const originalArray = [1, 2, 3, 4, 5];
-console.log("Original Array:", originalArray);
-const reversedArray = reverseArray(originalArray.slice());
-console.log("Reversed Array:",reversedArray);
+    const revArray = [];
+    let len = array.length;
+    console.log(len);
+
+    
+    for( let i=len-1 ; i>=0 ; i--){
+        revArray.push(array[i]);
+    }
+    return revArray;
+    
+}
+const array = [21, 22, 24, 28, 30];
+const revNumber = revArray(array);
+console.log(revNumber);
